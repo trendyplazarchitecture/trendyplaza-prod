@@ -1,0 +1,29 @@
+{
+  "//": "The directional-property ban from the enforcement table in _AI_CONTEXT/01_RULES.md. Logical properties are what make RTL a `dir` attribute instead of a rewrite: `margin-inline-start` mirrors itself in Arabic, `margin-left` does not. No shared config is extended on purpose, so Tailwind v4's at-rules (@theme, @custom-variant, @utility) do not need an allow-list.",
+  "rules": {
+    "property-disallowed-list": [
+      [
+        "margin-left",
+        "margin-right",
+        "padding-left",
+        "padding-right",
+        "border-left",
+        "border-right",
+        "border-left-width",
+        "border-right-width",
+        "border-left-color",
+        "border-right-color",
+        "left",
+        "right"
+      ],
+      {
+        "message": "Use the logical property instead: margin-inline-start, padding-inline-end, border-inline-start, inset-inline-start. See _AI_CONTEXT/01_RULES.md."
+      }
+    ],
+    "declaration-property-value-disallowed-list": {
+      "text-align": ["/^(left|right)$/"],
+      "float": ["/^(left|right)$/"],
+      "clear": ["/^(left|right)$/"]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+# Production. Four containers on one Hostinger KVM 2, plus a one-shot migrator.
+#
+#   caddy     the only thing bound to a public port. TLS, HTTP/3, compression.
+#   web       the Next.js standalone server. Never published to the host.
+#   db        Postgres 16. Never published to the host, not even on 127.0.0.1.
+#   backup    nightly pg_dump, kept 14 days.
+#   migrate   runs to completion before web starts, then exits.
+#
+# Read `docs/DEPLOYMENT.md` before running this. It is the runbook; this file
+# is only the shape.
+#
+#   docker compose -f docker-compose.prod.yml up -d --build
+
+name: tp
+
+services:
+  # -------------------------------------------------------------------------
+  # Migrations. Runs to completion, exits 0, and web waits for that.
+  # -------------------------------------------------------------------------
+  migrate:
+    build:
+      context: .
+      target: migrator
+    env_file: [.env]
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [internal]
+    restart: "no"
+
+  # -------------------------------------------------------------------------
+  # The application
+  # -------------------------------------------------------------------------
+  web:
+    build:
+      context: .
+      target: runner
+      args:
+        # Inlined at build time by Next. Changing one of these needs a rebuild,
+        # not a restart — which is why the RIP number moved into `app_settings`
+        # instead (open item O4, closed): it edits live from the admin now.
+        NEXT_PUBLIC_WHATSAPP: ${NEXT_PUBLIC_WHATSAPP}
+        NEXT_PUBLIC_INSTAGRAM: ${NEXT_PUBLIC_INSTAGRAM}
+    env_file: [.env]
+    environment:
+      STORAGE_ROOT: /var/lib/tp
+    volumes:
+      # Receipts, resources and avatars. The one piece of state that is not in
+      # Postgres, and the one thing a `docker compose down -v` must not touch.
+      - tp_storage:/var/lib/tp
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    # No `ports:`. Caddy reaches it over the internal network and nothing else
+    # can. A published 3000 would be a way past TLS and past the rate limiter.
+    networks: [internal]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+  # -------------------------------------------------------------------------
+  # Postgres
+  # -------------------------------------------------------------------------
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      # The same collation as development, so ORDER BY on French and Arabic
+      # names cannot differ between a developer's machine and the server.
+      POSTGRES_INITDB_ARGS: "--locale=C.UTF-8 --encoding=UTF8"
+    volumes:
+      - tp_pgdata:/var/lib/postgresql/data
+    # Deliberately unpublished. `docker exec` is the way in; a port on the host
+    # is a port on the internet the day ufw is misconfigured.
+    networks: [internal]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # -------------------------------------------------------------------------
+  # TLS and the only public port
+  # -------------------------------------------------------------------------
+  caddy:
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp" # HTTP/3
+    environment:
+      DOMAIN: ${DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      # Certificates. Losing this volume means re-issuing on next boot and
+      # walking into Let's Encrypt's rate limit while the site is down.
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+    networks: [internal]
+    restart: unless-stopped
+
+  # -------------------------------------------------------------------------
+  # Backups. Every night, kept 14 days, on the same disk — which is half a
+  # backup. `docs/DEPLOYMENT.md` covers pulling them off the box, which is the
+  # half that survives losing the VPS.
+  # -------------------------------------------------------------------------
+  backup:
+    image: postgres:16-alpine
+    environment:
+      PGUSER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      PGDATABASE: ${POSTGRES_DB}
+      PGHOST: db
+      KEEP_DAYS: "14"
+    volumes:
+      - ./deploy/backup.sh:/usr/local/bin/backup.sh:ro
+      - tp_backups:/backups
+    entrypoint: ["/bin/sh", "/usr/local/bin/backup.sh"]
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [internal]
+    restart: unless-stopped
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  tp_pgdata:
+  tp_storage:
+  tp_backups:
+  caddy_data:
+  caddy_config:

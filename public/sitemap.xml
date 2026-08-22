@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Home Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Catalogue Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/catalogue</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/catalogue"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/catalogue</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/catalogue"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/catalogue</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/catalogue"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/catalogue"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- News Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/news"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/news"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/news"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/news"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/news"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/news"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/news"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/news"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/news"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Events Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/events"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/events"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/events"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/events"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/events"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/events"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/events"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/events"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/events"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track Order Pages -->
+  <url>
+    <loc>https://trendyplaza.tech/en/track-order</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/track-order"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/track-order"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/track-order"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/ar/track-order</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/track-order"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/track-order"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/track-order"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://trendyplaza.tech/fr/track-order</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trendyplaza.tech/en/track-order"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://trendyplaza.tech/ar/track-order"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://trendyplaza.tech/fr/track-order"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

@@ -1,0 +1,28 @@
+# Development database only. The application runs on the host via `npm run dev`.
+# Production compose (caddy + web + db + backup) is a separate file, Phase 6.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: tp-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tp
+      POSTGRES_PASSWORD: tp_dev_password
+      POSTGRES_DB: tp
+      # Deterministic collation so ORDER BY on French and Arabic names does not
+      # differ between a developer machine and the VPS.
+      POSTGRES_INITDB_ARGS: "--locale=C.UTF-8 --encoding=UTF8"
+    ports:
+      # 5433, not 5432, so a Postgres already installed on the host does not
+      # silently win the port and serve the wrong database.
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - tp_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tp -d tp"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  tp_pgdata:

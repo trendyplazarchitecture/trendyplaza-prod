@@ -1,0 +1,359 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * TP Architecture design system.
+ *
+ * Tokens from _AI_CONTEXT/12_DESIGN.md, converted to oklch.
+ * red #ED1F24 / red-press #C4161C / ink #111113 / graphite #6E6E76
+ * rule #E4E4E7 / paper #F3F3F4 / surface #FFFFFF
+ *
+ * The world is a drafting sheet: an off-white ground, hairline rules that mark
+ * real boundaries, a modular grid that aligns to the layout rather than
+ * decorating behind it, and one red that behaves like a marked-up correction.
+ * See docs/TYPOGRAPHY.md for the three-script type stack.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+  --radius-2xl: calc(var(--radius) + 12px);
+  --radius-3xl: calc(var(--radius) + 20px);
+
+  --font-display: "Montserrat", "Changa", system-ui, sans-serif;
+  --font-sans: "Montserrat", "Almarai", system-ui, sans-serif;
+  --font-reading: "Montserrat", "Changa", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Menlo", monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-press: var(--primary-press);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-rule: var(--rule-strong);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Status hues. Kept few and kept desaturated, so the brand red stays the
+     loudest thing on any screen and a red row still means "look here". */
+  --color-status-pending: var(--status-pending);
+  --color-status-active: var(--status-active);
+  --color-status-transit: var(--status-transit);
+  --color-status-done: var(--status-done);
+  --color-status-halted: var(--status-halted);
+
+  --color-sheet: var(--sheet);
+  --color-sheet-ink: var(--sheet-ink);
+}
+
+:root {
+  /* Tight. A drafting sheet has corners, not pills. */
+  --radius: 0.375rem;
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.176 0.003 285);
+  --paper: oklch(0.964 0.002 286);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.176 0.003 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.176 0.003 285);
+
+  --primary: oklch(0.588 0.226 27.5);
+  --primary-press: oklch(0.494 0.198 28.3);
+  --primary-foreground: oklch(1 0 0);
+
+  --secondary: oklch(0.964 0.002 286);
+  --secondary-foreground: oklch(0.176 0.003 285);
+  --muted: oklch(0.964 0.002 286);
+  --muted-foreground: oklch(0.518 0.007 285);
+  --accent: oklch(0.964 0.002 286);
+  --accent-foreground: oklch(0.176 0.003 285);
+  --destructive: oklch(0.494 0.198 28.3);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.92 0.004 286);
+  /* One step darker than --border, for rules that mark a real division rather
+     than merely enclosing a box. */
+  --rule-strong: oklch(0.865 0.005 286);
+  --input: oklch(0.92 0.004 286);
+  --ring: oklch(0.588 0.226 27.5);
+
+  /* Warm tint used for the one highlighted panel per page. From the logo
+     off-white pushed toward the brand red, never a second brand colour. */
+  --sheet: oklch(0.966 0.017 55);
+  --sheet-ink: oklch(0.42 0.09 40);
+
+  --status-pending: oklch(0.66 0.14 70);
+  --status-active: oklch(0.55 0.13 240);
+  --status-transit: oklch(0.6 0.12 300);
+  --status-done: oklch(0.56 0.12 155);
+  --status-halted: oklch(0.55 0.02 285);
+
+  /* Drafting grid. One module, used by both the background and the layout, so
+     the lines behind a section actually line up with the content on it. */
+  --module: 64px;
+  --grid-line: oklch(0.176 0.003 285 / 0.045);
+  --grid-line-strong: oklch(0.176 0.003 285 / 0.075);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  /* Long prose gets a measure. 65-75ch, enforced here rather than remembered
+     at every call site. */
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* --- Arabic -----------------------------------------------------------
+     Changa for display, Almarai for everything read or operated. A brief
+     switch to Amiri for reading and display was reverted: the CSS named it
+     but the font was never added to the Google Fonts request in
+     app/[locale]/layout.tsx, so every Arabic heading and paragraph was
+     silently rendering in the Georgia fallback instead — worse than either
+     stack on its own. See docs/TYPOGRAPHY.md. */
+  [lang="ar"] body,
+  [lang="ar"] p,
+  [lang="ar"] li,
+  [lang="ar"] blockquote,
+  [lang="ar"] button,
+  [lang="ar"] input,
+  [lang="ar"] select,
+  [lang="ar"] textarea,
+  [lang="ar"] th,
+  [lang="ar"] td,
+  [lang="ar"] label,
+  [lang="ar"] .ui-dense {
+    font-family: "Almarai", system-ui, sans-serif;
+    line-height: 1.7;
+  }
+
+  [lang="ar"] h1,
+  [lang="ar"] h2,
+  [lang="ar"] h3 {
+    font-family: "Changa", "Almarai", system-ui, sans-serif;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+}
+
+/* --- Drafting grid -------------------------------------------------------
+   Structural, not decorative. The module matches the layout rhythm, so a rule
+   behind a section falls where a column edge falls. Applied to a section, not
+   to the page, so it marks a region rather than papering the whole document. */
+.sheet-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--module) var(--module);
+  background-position: center top;
+}
+
+/* Every fourth line reads heavier, the way a drafting grid marks its major
+   divisions. */
+.sheet-grid-major {
+  background-image:
+    linear-gradient(to right, var(--grid-line-strong) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line-strong) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size:
+    calc(var(--module) * 4) calc(var(--module) * 4),
+    calc(var(--module) * 4) calc(var(--module) * 4),
+    var(--module) var(--module),
+    var(--module) var(--module);
+  background-position: center top;
+}
+
+/* Fades the grid out at the edges so it reads as a field the content sits on,
+   never as a border that stops abruptly. */
+.sheet-grid-fade {
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, #000 40%, transparent 100%);
+}
+
+/* Corner ticks. The registration marks on a drawn sheet, cropped to the four
+   corners of a panel that matters. Drawn with borders on pseudo elements so
+   they cost no markup and no request. */
+.sheet-ticks {
+  position: relative;
+}
+
+.sheet-ticks::before,
+.sheet-ticks::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--color-primary);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.sheet-ticks::before {
+  inset-block-start: -1px;
+  inset-inline-start: -1px;
+  border-top: 1.5px solid;
+  border-inline-start: 1.5px solid;
+}
+
+.sheet-ticks::after {
+  inset-block-end: -1px;
+  inset-inline-end: -1px;
+  border-bottom: 1.5px solid;
+  border-inline-end: 1.5px solid;
+}
+
+/* Figures in a title block, an order total, a stock count. Tabular so columns
+   of numbers line up, which is the whole point of a table of numbers. */
+.figures {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* A thin, theme-matched scrollbar for a panel that scrolls inside a fixed
+   frame — a dialog capped at max-h-[90vh], a tall list. The OS default is a
+   thick, unstyled bar that reads as broken chrome sitting over the content;
+   this keeps it hairline and lets the ground show through until hovered. */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-muted-foreground);
+  background-clip: padding-box;
+}
+
+/* --- Motion --------------------------------------------------------------
+   One authored moment: content is visible by default and settles into place.
+   Exponential ease-out, so it decelerates the way a drawn line is laid down. */
+@keyframes sheet-settle {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+/* A rule that draws itself, used once per page on the section that matters. */
+@keyframes rule-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/*
+ * `transform: translateX` is a physical property: it does not mirror under
+ * `dir="rtl"` the way the bar's edge fades do (those use the `rtl:` Tailwind
+ * variant deliberately, to swap which side fades). Left unfixed, the Arabic
+ * ticker kept sliding physically leftward — the LTR direction — while a flex
+ * row under `dir="rtl"` lays its items out starting from the right. The two
+ * disagreeing is what read as the content lurching rather than flowing: each
+ * loop the visible window snapped against the layout instead of continuing
+ * it, the "snake game" effect. `[dir="rtl"]` gets the mirrored keyframe.
+ */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: tp-marquee 44s linear infinite;
+}
+
+[dir="rtl"] .marquee-track {
+  animation-name: tp-marquee-rtl;
+}
+
+@keyframes tp-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tp-marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

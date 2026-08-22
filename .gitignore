@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+.output
+.vinxi
+.tanstack/**
+.nitro
+.next
+*.local
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+tsconfig.tsbuildinfo
+
+# Secrets and local state
+.env
+.env.local
+.env.*.local
+_BUILD/CREDENTIALS.md
+_BUILD/DEPLOY_SECRETS.md
+_BUILD/keys/
+
+# Uploaded files live outside the web root. Never under public/.
+.storage/
+
+# A middleware.ts would silently never run on Next.js 16. Locale routing lives
+# in proxy.ts. Ignored so a generated one cannot be committed by accident.
+middleware.ts
+src/middleware.ts
+
+# Local tooling config, not part of the project.
+.claude/
+
+# scripts/export-client-repo.sh builds a clean deploy snapshot here. It is a
+# throwaway working directory with its own nested .git, never this repo's.
+.export-client-repo/
