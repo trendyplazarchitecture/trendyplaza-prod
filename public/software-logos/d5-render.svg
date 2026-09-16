@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 640">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .st1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-158.4" y1="-301.2" x2="-158.4" y2="-300.2" gradientTransform="translate(101681 192761) scale(640)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#265eff"/>
+      <stop offset="1" stop-color="#b319ff"/>
+    </linearGradient>
+  </defs>
+  <g id="d5render-logo-oval-gradient">
+    <g id="Logo_Icon_02">
+      <circle id="Oval-BG" class="st1" cx="320" cy="320" r="320"/>
+      <g id="Logo">
+        <path class="st0" d="M228.9,478.8l-28.9-13.8v-243.4l121.8-61.5,121.8,61.5v149.3l-28.9,15.1-28.9,13.8-128.1,65.2-28.9,13.8h0ZM257.8,256.6v150.6l129.4-65.2v-85.3l-64.1-32.6-65.3,32.6h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

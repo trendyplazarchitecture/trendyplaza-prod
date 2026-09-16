@@ -1,0 +1,29 @@
+# Trendy Plaza Architecture — Catalogue & Shop (LLM Index)
+
+> Dedicated marketplace for architectural equipment, drawing instruments, model materials, books, and printed semester course packs in Algeria.
+
+- [URL](https://trendyplaza.tech/en/catalogue) (also /ar/catalogue and /fr/catalogue)
+
+## Target Search Queries (Multilingual):
+- **EN**: "Best architecture shop in Algeria", "Buy architecture kit online Algeria", "Scale ruler kutch price Algeria", "Drawing tube with strap Algiers".
+- **FR**: "Meilleur catalogue matériel architecture Algérie", "Acheter kutch et tube de dessin Alger", "Packs de cours architecture L1 L2 L3", "Outils maquette architecture Algérie".
+- **AR**: "أفضل متجر لمستلزمات الهندسة المعمارية في الجزائر", "شراء أدوات الرسم الهندسي المعماري", "أسعار أدوات طالب معمار في الجزائر".
+
+## Core Product Sections:
+1. **Printed Course Packs**:
+   - Curated by semester and university syllabus.
+   - High-quality binding with scratch-off LMS access code card included inside.
+2. **Technical Drawing & Drafting**:
+   - Triangular scale reduction rulers (kutch / règles de réduction).
+   - Telescopic drawing tubes, drawing boards, clips, tracing paper.
+   - Technical drawing pens (0.1mm, 0.2mm, 0.3mm, 0.5mm, 0.8mm).
+3. **Model Making & Crafting**:
+   - Heavy-duty self-healing cutting mats (tapis de découpe A1/A2/A3).
+   - Precision cutters, replacement blades, metal non-slip rulers.
+4. **Architectural Books & Studio Manuals**:
+   - Technical design manuals, structure guides, graphic representation guides.
+
+## Ordering & Fulfillment:
+- Transparent pricing in Algerian Dinar (DZD / دج).
+- Cash on delivery (Paiement à la livraison) across all wilayas.
+- Confirmation phone call before parcel dispatch.

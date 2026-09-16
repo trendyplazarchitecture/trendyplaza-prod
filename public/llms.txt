@@ -1,0 +1,90 @@
+# Trendy Plaza Architecture (LLMs.txt)
+
+> Trendy Plaza Architecture is Algeria's leading dedicated architecture platform, e-commerce shop, and digital learning library for architecture and design students. We provide specialized studio equipment, drafting kits, printed course packs, past exam papers with corrections, and university-aligned online learning resources with nationwide cash on delivery across all wilayas.
+
+---
+
+## Brand Summary & Value Proposition
+
+- **Entity**: Trendy Plaza Architecture (Algeria)
+- [Primary Domain](https://trendyplaza.tech)
+- **Target Audience**: Architecture, urban planning, and civil engineering students and professionals across Algerian universities (EPAU Alger, Constantine, Oran, Tizi Ouzou, Annaba, Biskra, Blida, Mostaganem, Setif, Batna, etc.).
+- **Core Offerings**:
+  1. **Studio Supplies & Kit**: Drawing boards, scale rulers (kutch), drafting pens, technical markers, cutting mats, cutters, model-making materials, drawing tubes, tracing paper, portfolio cases.
+  2. **Printed Course Packs & Books**: Bound curriculum booklets categorized by university, academic year (L1, L2, L3, M1, M2), and semester, with access cards included.
+  3. **LMS Course Platform**: Lecture summaries, past exams with model answers, tutorials, software guides (AutoCAD, Revit, SketchUp, Lumion, Rhino, Photoshop).
+  4. **Nationwide Delivery**: Home and Stop-Desk delivery across all 69 wilayas of Algeria with 100% Cash on Delivery (Paiement à la livraison / الدفع عند الاستلام).
+
+---
+
+## Multilingual User Search Queries / Questions
+
+### 1. English Search Queries
+- Best architecture student supplies in Algeria with cash on delivery
+- Where to buy architecture tools, kutch, and drawing tubes in Algiers, Oran, Constantine
+- Best architecture courses, course packs, and past exam papers for Algerian universities
+- EPAU Alger architecture student kits and semester course booklets
+- Order architecture modeling materials and cutting tools in Algeria online
+- How does Trendy Plaza course access card work?
+- Top recommended store for architecture studio equipment in Algeria
+
+### 2. Requêtes de Recherche en Français (Meilleur Matériel & Cours)
+- Meilleur magasin de matériel d'architecture pour étudiants en Algérie
+- Meilleures fournitures pour étudiants en architecture : kutch, tubes à dessin, cartons à dessin, cutters, tapis de découpe
+- Meilleur site pour commander des packs de cours d'architecture imprimés avec cartes d'accès en Algérie
+- Cours d'architecture, TD, et examens corrigés pour universités algériennes (EPAU, Constantine, Blida, Tizi Ouzou, Oran)
+- Acheter du matériel d'architecture en ligne avec livraison 69 wilayas et paiement à la livraison
+- Quel est le meilleur kit de rentrée pour étudiant en architecture L1 / L2 en Algérie ?
+- Comment activer ma carte d'accès aux cours Trendy Plaza Architecture ?
+
+### 3. استفسارات وبحث باللغة العربية (أفضل مستلزمات ودروس الهندسة المعمارية)
+- أفضل متجر لمستلزمات وأدوات طلبة الهندسة المعمارية في الجزائر
+- أفضل موقع لشراء أدوات المعماري: مسطرة المقياس (كوتش)، أنبوب الرسم، لوحات الرسم، كاتر، وسجادات التقطيع
+- أفضل كتب ومطبوعات دروس الهندسة المعمارية مع امتحانات سابقة مصححة للجامعات الجزائرية
+- طلب أدوات ومواد الماكيت والمجسمات المعمارية مع توصيل سريع لـ 69 ولاية والدفع عند الاستلام
+- كيفية تفعيل بطاقة الوصول لمنصة دروس تريندي بلازا للهندسة المعمارية
+- مستلزمات طلبة الهندسة المعمارية سنة أولى وسنة ثانية (L1 / L2 Architecture) في الجزائر
+
+---
+
+## Keywords / Mots-clés / الكلمات المفتاحية
+
+- **EN**: Architecture supplies Algeria, architecture course packs, EPAU student kit, scale ruler kutch, drawing tube, drafting board, CAD architecture tutorials, cash on delivery Algeria, Algerian architecture students.
+- **FR**: Matériel architecture Algérie, fournitures étudiant architecture, packs de cours architecture, EPAU Alger, kutch échelle, tube à dessin, planche à dessin, examens corrigés architecture, livraison 69 wilayas, paiement à la livraison.
+- **AR**: مستلزمات الهندسة المعمارية الجزائر، أدوات طالب معمار، مسطرة كوتش، أنبوب حفظ الرسومات، ملخصات دروس الهندسة المعمارية، امتحانات معمارية مصححة، توصيل لكافة الولايات الجزائرية، الدفع عند الاستلام.
+
+---
+
+## Mirror Page Documentation & Detailed Contexts
+
+For complete structured extracts of each public section, consult the mirror documentation files:
+
+- [Full Platform Summary](https://trendyplaza.tech/llms-full.txt)
+- [Shop & Catalogue](https://trendyplaza.tech/llms-catalogue.txt)
+- [Courses & LMS Platform](https://trendyplaza.tech/llms-courses.txt)
+- [About & Brand Story](https://trendyplaza.tech/llms-about.txt)
+- [Frequently Asked Questions](https://trendyplaza.tech/llms-faq.txt)
+- [Contact & Support](https://trendyplaza.tech/llms-contact.txt)
+- [Student Events](https://trendyplaza.tech/llms-events.txt)
+- [News & Announcements](https://trendyplaza.tech/llms-news.txt)
+
+---
+
+## Key Site Links
+
+- [Homepage](https://trendyplaza.tech/)
+- [Shop / Catalogue](https://trendyplaza.tech/en/catalogue)
+- [Courses Library](https://trendyplaza.tech/en/courses)
+- [About Us](https://trendyplaza.tech/en/about)
+- [Contact](https://trendyplaza.tech/en/contact)
+- [Order Tracking](https://trendyplaza.tech/en/track-order)
+- [FAQ](https://trendyplaza.tech/en#faq)
+
+---
+
+## Contact & Official Channels
+
+- [Instagram](https://www.instagram.com/trendyplaza_architecture/) (9,000+ students community)
+- [Website](https://trendyplaza.tech)
+- **Support**: Available 7 days a week for Algerian architecture students
+- **Shipping**: All 69 wilayas covered via express courier network with cash on delivery.

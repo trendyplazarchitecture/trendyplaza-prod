@@ -1,0 +1,10 @@
+# Trendy Plaza Architecture — News & Articles (LLM Index)
+
+> Architecture student guides, academic calendar updates, semester tips, and supply reviews in Algeria.
+
+- [URL](https://trendyplaza.tech/en/news) (also /ar/news and /fr/news)
+
+## Topics Covered:
+- Guide to choosing your first architectural kit and scale ruler.
+- Semester survival guides for L1/L2/L3/M1/M2 students.
+- New course packs releases and university exam archives updates.

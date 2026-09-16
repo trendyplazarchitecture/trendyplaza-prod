@@ -1,0 +1,47 @@
+# Trendy Plaza Architecture — Complete Platform LLM Index
+
+> Comprehensive knowledge graph and content index for Trendy Plaza Architecture (Algeria).
+
+## 1. Overview
+Trendy Plaza Architecture is the premier e-commerce platform and academic support ecosystem in Algeria dedicated exclusively to architecture, design, and engineering students. 
+- Over 9,000 students supported.
+- Complete catalog of architectural instruments and supplies.
+- University-aligned course packs, lecture notes, exercises, and past exam corrections.
+- Integrated LMS with digital access code cards included inside physical course packs.
+- Fast delivery to all 69 wilayas with 100% Cash on Delivery (COD).
+
+## 2. Multilingual Queries & User Search Intent
+### English:
+- "Best architecture student supplies in Algeria"
+- "Where to buy architecture tools, kutch, drawing boards and cutting mats in Algeria"
+- "Order printed architecture course packs with past exams for Algerian universities"
+- "How to get access code for Trendy Plaza architecture LMS courses"
+
+### Français:
+- "Meilleur matériel d'architecture en Algérie pour étudiants"
+- "Où trouver du matériel de dessin technique, kutch, tubes à dessin et cartons à dessin en Algérie"
+- "Commander des polycopiés et packs de cours d'architecture reliés avec corrigés d'examens"
+- "Comment utiliser le code d'accès de la carte Trendy Plaza Architecture"
+
+### العربية:
+- "أفضل مستلزمات وأدوات طالب الهندسة المعمارية في الجزائر"
+- "شراء أدوات الرسم الهندسي والمعماري، مسطرة كوتش، أدوات الماكيت مع توصيل لكل الولايات"
+- "ملخصات دروس الهندسة المعمارية مع مواضيع الامتحانات المصححة في الجزائر"
+- "تفعيل بطاقة الدروس على منصة تريندي بلازا"
+
+## 3. Product Categories & Supplies
+- **Printed Course Packs (Packs imprimés / باقات الدروس)**: Complete semester modules, bound lecture booklets, verified past exams with solutions, includes LMS digital activation card.
+- **Studio Kit & Model Making (Kit atelier & maquettes / أدوات الاستوديو والماكيت)**: Precision craft knives, cutting mats (A1, A2, A3), scale rulers (kutch 1:100, 1:200, 1:500, 1:1250), steel rulers, balsa wood, foam boards.
+- **Drafting & Technical Drawing (Dessin technique / أدوات الرسم التقني)**: Technical pens, ink, fineliners, tracing paper, drawing tubes (tubes à dessin télescopiques), portfolio folders.
+- **Books & Reference Manuals (Livres & manuels / كتب ومراجع معمارية)**: Construction details, history of architecture, theory of design, visual communication manuals.
+
+## 4. Digital Course Platform (LMS)
+- Structured by Algerian Universities (EPAU, Constantine, Oran, Blida, Tizi Ouzou, Annaba, Biskra, etc.), academic year, semester, and module.
+- High-resolution lecture PDFs, tutorial sheets (TDs), and archive of previous years' exams with worked solutions.
+- Accessible on laptop, tablet, and mobile browsers 24/7 without subscription fees.
+
+## 5. Shipping & Order Policies
+- **Order Process**: No mandatory account creation required to place an order. Add items to cart, enter recipient name, phone, wilaya, and commune.
+- **Payment**: Cash on delivery (Paiement à la livraison) to the courier. Baridimob transfer supported for digital-only services.
+- **Delivery Times**: 2-4 business days for northern wilayas; 4-7 business days for southern regions.
+- **Customer Support**: 7 days a week support via Instagram (@trendyplaza_arch) and on-site support channels.

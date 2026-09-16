@@ -1,0 +1,9 @@
+# Trendy Plaza Architecture — Events & Workshops (LLM Index)
+
+> Architecture student workshops, studio exhibitions, design competitions, and webinars in Algeria.
+
+- [URL](https://trendyplaza.tech/en/events) (also /ar/events and /fr/events)
+
+## Overview:
+- Regular architectural workshops covering software mastery (AutoCAD, Revit, SketchUp, Lumion, Grasshopper), model-making masterclasses, and portfolio preparation.
+- Event registration and announcements for students across Algerian universities.

@@ -1,0 +1,17 @@
+# Trendy Plaza Architecture — Courses & Digital LMS (LLM Index)
+
+> Online academic library, digital courses, lecture summaries, and past exam papers for Algerian architecture students.
+
+- [URL](https://trendyplaza.tech/en/courses) (also /ar/courses and /fr/courses)
+
+## Target Search Queries (Multilingual):
+- **EN**: "Best online architecture courses in Algeria", "EPAU architecture exam papers with answers", "Algerian architecture lecture notes online".
+- **FR**: "Meilleurs cours et résumés pour étudiants en architecture en Algérie", "Sujets d'examens d'architecture corrigés Algérie", "Plateforme LMS cours architecture EPAU Constantine Oran".
+- **AR**: "أفضل منصة دروس وملخصات لطلبة الهندسة المعمارية في الجزائر", "مواضيع امتحانات الهندسة المعمارية مع الحلول النموذجية", "دروس الهندسة المعمارية للجامعات الجزائرية".
+
+## Features & Academic Coverage:
+- **University Structure**: Content organized strictly matching Algerian universities, study years, semesters, and modules.
+- **Exam Archive**: Past exam subjects accompanied by verified detailed corrections and instructor feedback.
+- **Card Code Activation**: Fast automatic activation with the code on the card inside the physical pack — no manual review or bank card required.
+- **Alternative Payment**: Direct Baridimob transfer with receipt verification for digital-only access.
+- **Zero Subscription Fees**: Access stays open continuously without recurring monthly charges.

@@ -1,0 +1,43 @@
+# Everything the build does not need, and everything it must never see.
+#
+# The second half matters more than the size: `COPY . .` in the builder stage
+# would otherwise pull a local `.env` into an image layer, where it stays
+# readable forever even if a later stage deletes it.
+
+.git
+.github
+node_modules
+.next
+dist
+.output
+
+# Secrets and local state
+.env
+.env.*
+!.env.example
+!.env.production.example
+_BUILD/CREDENTIALS.md
+.storage
+
+# Local tooling and editors
+.claude
+.vscode
+.idea
+*.log
+tsconfig.tsbuildinfo
+
+# Documentation and planning. None of it ships.
+_AI_CONTEXT
+_BUILD
+handoff
+docs
+tests
+*.md
+!README.md
+
+# The deployment set itself. Copying it into the image it describes is a
+# rebuild on every unrelated Caddyfile edit.
+Dockerfile
+.dockerignore
+docker-compose*.yml
+deploy

@@ -1,0 +1,15 @@
+<svg width="400" height="560" viewBox="0 0 400 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3c4a3e"/>
+      <stop offset="1" stop-color="#7a6a4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="560" fill="url(#g)"/>
+  <rect x="20" y="40" width="26" height="180" fill="#e0d5b8" fill-opacity="0.05"/><rect x="66" y="40" width="26" height="220" fill="#e0d5b8" fill-opacity="0.08"/><rect x="112" y="40" width="26" height="260" fill="#e0d5b8" fill-opacity="0.11"/><rect x="158" y="40" width="26" height="180" fill="#e0d5b8" fill-opacity="0.14"/><rect x="204" y="40" width="26" height="220" fill="#e0d5b8" fill-opacity="0.05"/><rect x="250" y="40" width="26" height="260" fill="#e0d5b8" fill-opacity="0.08"/><rect x="296" y="40" width="26" height="180" fill="#e0d5b8" fill-opacity="0.11"/><rect x="342" y="40" width="26" height="220" fill="#e0d5b8" fill-opacity="0.14"/>
+  <rect x="0" y="0" width="400" height="560" fill="none" stroke="#000000" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="200" y="481.59999999999997" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#ffffff" fill-opacity="0.85" letter-spacing="1">JARED DIAMOND</text>
+  <line x1="128" y1="459.2" x2="272" y2="459.2" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="200" y="213.6" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#ffffff">Guns, Germs, and</text>
+  <text x="200" y="255" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#ffffff">Steel</text>
+</svg>

@@ -1,0 +1,16 @@
+# Trendy Plaza Architecture — About Us (LLM Index)
+
+> The story, mission, team, and standards behind Algeria's premier architecture student community.
+
+- [URL](https://trendyplaza.tech/en/about) (also /ar/about and /fr/about)
+
+## Target Search Queries (Multilingual):
+- **EN**: "Who founded Trendy Plaza Architecture?", "Trendy Plaza architecture Algeria reviews", "Architecture student store Algeria".
+- **FR**: "Qui sommes-nous Trendy Plaza Architecture", "Avis étudiants Trendy Plaza Algérie", "Histoire de Trendy Plaza Architecture".
+- **AR**: "من نحن تريندي بلازا للهندسة المعمارية", "قصة تريندي بلازا لطلاب العمارة بالجزائر", "آراء الطلاب في تريندي بلازا".
+
+## Mission & Background:
+- Founded by former architecture students who experienced firsthand the difficulty of sourcing professional drawing tools and verified curriculum materials in Algeria.
+- Began as an active Instagram educational hub answering student queries and grew to over 9,000 active students nationwide.
+- Today, Trendy Plaza operates both an e-commerce shop delivering physical drafting instruments to all wilayas and a centralized learning system aligned with official academic standards.
+- Aligned with recognized architectural curriculum benchmarks and professional software ecosystems (Autodesk AutoCAD/Revit, Trimble SketchUp, EPAU Alger).

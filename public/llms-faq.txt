@@ -1,0 +1,28 @@
+# Trendy Plaza Architecture — Frequently Asked Questions (LLM Index)
+
+> Complete Q&A guide for ordering, shipping, payments, and course access.
+
+- [URL](https://trendyplaza.tech/en#faq)
+
+## Common Questions & Answers:
+
+### Q1: How do I place an order?
+**A**: Add the products or course packs to your cart, fill in your delivery details (name, phone number, wilaya, and commune), and submit. No prior account registration is necessary. You pay the delivery driver in cash upon receiving your package.
+
+### Q2: How long does delivery take?
+**A**: Deliveries take between 2 to 4 days for northern Algerian wilayas and between 4 to 7 days for southern wilayas. A confirmation phone call is made to the recipient before shipment.
+
+### Q3: What does shipping cost?
+**A**: Shipping fees depend on the chosen wilaya and whether you choose home delivery (livraison à domicile) or stop desk pickup (bureau de retrait). The exact price is automatically calculated and shown at checkout.
+
+### Q4: How do I use the access card that came inside my pack?
+**A**: Create your free account on the courses platform (https://trendyplaza.tech/en/courses), type the unique code printed on your card, and your modules unlock immediately without any manual verification.
+
+### Q5: Can I get course access without buying a physical pack?
+**A**: Yes. You can register on the courses portal, transfer the fee via Baridimob to the RIP displayed on screen, and upload your payment receipt. An administrator validates it within 24 to 48 hours.
+
+### Q6: Can I download course files for offline study?
+**A**: Resources, summaries, and exam corrections are accessible directly within your secure browser session on any smartphone, tablet, or PC anytime.
+
+### Q7: Are the products suitable for 1st-year architecture students (L1)?
+**A**: Yes, our starter kits and pack selections are specifically tailored to meet the exact requirements of first-year architectural studios across Algerian universities.

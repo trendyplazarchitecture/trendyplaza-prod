@@ -1,0 +1,45 @@
+# Controls what `git archive` exports. It does not affect `git clone`, `git
+# log`, GitHub, or anything else about this repo's history — everything
+# marked `export-ignore` stays exactly as tracked, everywhere else.
+#
+# This repo is the working one: full history, the whole _AI_CONTEXT/ pack,
+# every handoff note. A second, client-facing repo is what actually deploys,
+# connected to the VPS through its Docker manager, and it has no business
+# carrying the internal planning trail. `scripts/export-client-repo.sh`
+# builds that second repo's tree with `git archive`, which silently drops
+# everything listed below.
+#
+# Add a path here the day it becomes "ours, not the client's" — a new session
+# handoff file, a new folder under _BUILD. Nothing enforces that the list
+# stays current; it is read, not generated.
+
+# The AI context pack: every file whose job is telling a future Claude
+# session what this project is and where things are.
+_AI_CONTEXT/         export-ignore
+CLAUDE.md            export-ignore
+
+# Planning and session state. Useful to us mid-project, meaningless once the
+# thing is built and running on the client's own infrastructure.
+handoff/             export-ignore
+_BUILD/              export-ignore
+EXECUTION_PLAN.md    export-ignore
+PRODUCT.md           export-ignore
+
+# Third-party tooling notices, not project documentation.
+AGENTS.md            export-ignore
+
+# Describes the AI context pack itself ("drop these into the repo root"),
+# not the application. A client repo wants a real README or none; this one
+# would be actively misleading sitting at its root.
+README.md            export-ignore
+
+# docs/ is deliberately NOT listed. DEPLOYMENT.md, REPO_MAP.md and
+# TYPOGRAPHY.md are engineering reference for whoever runs this in
+# production, which is exactly the client repo's audience.
+
+# Shell scripts always LF, regardless of core.autocrlf. This repo is
+# developed on Windows; a script checked out with CRLF line endings breaks
+# the moment git-bash tries to run it — the shebang line and every `read`
+# prompt in scripts/export-client-repo.sh included.
+*.sh text eol=lf
+deploy/backup.sh text eol=lf
